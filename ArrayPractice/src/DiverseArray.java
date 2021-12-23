@@ -16,7 +16,7 @@ public class DiverseArray {
         System.out.println(arraySum(multiplesOf(3, 10)));
         print1d(rowSums(a));
         if(isDiverse(a)){
-            System.out.println("it is diverse");
+            System.out.println("it is not diverse");
         }
 
     }
@@ -53,10 +53,10 @@ public class DiverseArray {
         int[] retarr = new int[arr2D.length];
         for (int i = 0; i < arr2D.length; i++) {
             // Consider using arraySum method here...
-            // retarr[i] = arraySum(arr2D[i]);
-            for (int j = 0; j < arr2D[0].length; j++) {
+             retarr[i] = arraySum(arr2D[i]);
+           /* for (int j = 0; j < arr2D[0].length; j++) {
                 retarr[i] += arr2D[i][j];
-            }
+            }*/
         }
         return retarr;
     }
