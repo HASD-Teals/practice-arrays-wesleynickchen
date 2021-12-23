@@ -52,6 +52,8 @@ public class DiverseArray {
     public static int[] rowSums(int[][] arr2D) {
         int[] retarr = new int[arr2D.length];
         for (int i = 0; i < arr2D.length; i++) {
+            // Consider using arraySum method here...
+            // retarr[i] = arraySum(arr2D[i]);
             for (int j = 0; j < arr2D[0].length; j++) {
                 retarr[i] += arr2D[i][j];
             }
